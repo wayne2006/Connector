@@ -1,6 +1,6 @@
 
 # 简介
 
-Bash On：https://github.com/Coldairarrow/DotNettySocket
+Base On：https://github.com/Coldairarrow/DotNettySocket
 
 
