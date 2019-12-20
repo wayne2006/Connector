@@ -11,7 +11,7 @@
     <PackageProjectUrl></PackageProjectUrl>
     <RepositoryUrl></RepositoryUrl>
     <PackageReleaseNotes />
-    <Version>1.2.0</Version>
+    <Version>1.2.1</Version>
     <AssemblyName>Ark.Connector</AssemblyName>
     <RootNamespace>Ark.Connector</RootNamespace>
     <PackageId>Ark.Connector</PackageId>
