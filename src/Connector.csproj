@@ -3,23 +3,23 @@
   <PropertyGroup>
     <TargetFrameworks>netstandard2.0;net45</TargetFrameworks>
     <Description>An Easy Socket(TcpSocket,WebSocket,UdpSocket) Framework Based On DotNetty</Description>
-    <Authors>Coldairarrow</Authors>
-    <Company>Coldairarrow</Company>
+    <Authors>WH</Authors>
+    <Company>Ark</Company>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <Copyright>Open Source</Copyright>
-    <PackageProjectUrl>https://github.com/Coldairarrow/DotNettySocket</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/Coldairarrow/DotNettySocket</RepositoryUrl>
+    <PackageProjectUrl></PackageProjectUrl>
+    <RepositoryUrl></RepositoryUrl>
     <PackageReleaseNotes />
     <Version>1.2.0</Version>
-    <AssemblyName>DotNettySocket</AssemblyName>
-    <RootNamespace>Coldairarrow.DotNettySocket</RootNamespace>
-    <PackageId>DotNettySocket</PackageId>
-    <Product>DotNettySocket</Product>
+    <AssemblyName>Ark.Connector</AssemblyName>
+    <RootNamespace>Ark.Connector</RootNamespace>
+    <PackageId>Ark.Connector</PackageId>
+    <Product>Ark.Connector</Product>
   </PropertyGroup>
 
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|netstandard2.0|AnyCPU'">
-    <DocumentationFile>obj\Debug\netstandard2.0\DotNettySocket.xml</DocumentationFile>
+    <DocumentationFile>D:\work\project\Netty\Connector\src\Ark.Connector.xml</DocumentationFile>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
   </PropertyGroup>
 
