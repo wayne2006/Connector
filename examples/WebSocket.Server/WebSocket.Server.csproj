@@ -52,9 +52,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\src\DotNettySocket\DotNettySocket.csproj">
+    <ProjectReference Include="..\..\src\Connector.csproj">
       <Project>{AFDB6665-F3CD-48D6-9863-4AAFA5FB97ED}</Project>
-      <Name>DotNettySocket</Name>
+      <Name>Connector</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

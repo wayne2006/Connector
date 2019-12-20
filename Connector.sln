@@ -17,7 +17,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpSocket.Server", "example
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UdpSocket.Client", "examples\UdpSocket.Client\UdpSocket.Client.csproj", "{2AD71CBA-B560-454F-9A28-40098CC80882}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DotNettySocket", "src\DotNettySocket\DotNettySocket.csproj", "{AFDB6665-F3CD-48D6-9863-4AAFA5FB97ED}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Connector", "src\Connector.csproj", "{AFDB6665-F3CD-48D6-9863-4AAFA5FB97ED}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WebSocket.WebClient", "examples\WebSocket.WebClient\WebSocket.WebClient.csproj", "{949341F5-0F39-4CC7-AAA0-0C2E263A7B43}"
 EndProject
