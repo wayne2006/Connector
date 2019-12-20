@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Net;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// UdpSocket构建者

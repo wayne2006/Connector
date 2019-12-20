@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class TcpSocketCientEvent<TSocketClient, TData>
     {

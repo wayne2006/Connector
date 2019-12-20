@@ -4,7 +4,7 @@ using System;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class TcpSocketConnection : BaseTcpSocketConnection<ITcpSocketServer, ITcpSocketConnection, byte[]>, ITcpSocketConnection
     {

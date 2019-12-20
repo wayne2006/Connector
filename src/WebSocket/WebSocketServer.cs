@@ -6,7 +6,7 @@ using DotNetty.Transport.Channels;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class WebSocketServer : BaseTcpSocketServer<IWebSocketServer, IWebSocketConnection, string>, IWebSocketServer
     {

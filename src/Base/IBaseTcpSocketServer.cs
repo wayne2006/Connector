@@ -1,12 +1,12 @@
 ﻿using System.Collections.Generic;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// TcpSocketServer基接口
     /// </summary>
     /// <typeparam name="SocketConnection">The type of the ocket connection.</typeparam>
-    /// <seealso cref="Coldairarrow.DotNettySocket.IClose" />
+    /// <seealso cref="Connector.DotNettySocket.IClose" />
     public interface IBaseTcpSocketServer<SocketConnection> : IClose
         where SocketConnection : IBaseSocketConnection
     {

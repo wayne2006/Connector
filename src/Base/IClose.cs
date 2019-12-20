@@ -1,4 +1,4 @@
-﻿namespace Coldairarrow.DotNettySocket
+﻿namespace Connector.DotNettySocket
 {
     /// <summary>
     /// 关闭接口

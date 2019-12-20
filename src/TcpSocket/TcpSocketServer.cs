@@ -1,7 +1,7 @@
 ﻿using DotNetty.Buffers;
 using DotNetty.Transport.Channels;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class TcpSocketServer : BaseTcpSocketServer<ITcpSocketServer, ITcpSocketConnection, byte[]>, ITcpSocketServer
     {

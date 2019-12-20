@@ -4,7 +4,7 @@ using System.Collections.Concurrent;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     abstract class BaseTcpSocketServer<TSocketServer, TConnection, TData> : IBaseTcpSocketServer<TConnection>, IChannelEvent
         where TConnection : class, IBaseSocketConnection

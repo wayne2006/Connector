@@ -6,7 +6,7 @@ using DotNetty.Transport.Channels.Sockets;
 using System;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class TcpSocketClientBuilder : BaseGenericClientBuilder<ITcpSocketClientBuilder, ITcpSocketClient, byte[]>, ITcpSocketClientBuilder
     {

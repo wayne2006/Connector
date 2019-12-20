@@ -6,7 +6,7 @@ using System.Linq;
 using System.Net;
 using System.Text;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     static class Extention
     {

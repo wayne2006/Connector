@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// 泛型服务端构建者
@@ -9,7 +9,7 @@ namespace Coldairarrow.DotNettySocket
     /// <typeparam name="TTarget">目标生成类</typeparam>
     /// <typeparam name="IConnection">特定连接</typeparam>
     /// <typeparam name="TData">数据类型</typeparam>
-    /// <seealso cref="Coldairarrow.DotNettySocket.IBuilder{TBuilder, TTarget}" />
+    /// <seealso cref="Connector.DotNettySocket.IBuilder{TBuilder, TTarget}" />
     public interface IGenericServerBuilder<TBuilder, TTarget, IConnection, TData> : IBuilder<TBuilder, TTarget>
     {
         /// <summary>

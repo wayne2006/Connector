@@ -1,9 +1,9 @@
-﻿namespace Coldairarrow.DotNettySocket
+﻿namespace Connector.DotNettySocket
 {
     /// <summary>
     /// TcpSocket客户端
     /// </summary>
-    /// <seealso cref="Coldairarrow.DotNettySocket.IClose" />
+    /// <seealso cref="Connector.DotNettySocket.IClose" />
     public interface IBaseTcpSocketClient : IClose
     {
         /// <summary>

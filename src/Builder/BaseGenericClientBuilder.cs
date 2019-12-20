@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     abstract class BaseGenericClientBuilder<TBuilder, TTarget, TData> :
         BaseBuilder<TBuilder, TTarget>,

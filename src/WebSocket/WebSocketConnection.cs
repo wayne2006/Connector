@@ -3,7 +3,7 @@ using DotNetty.Transport.Channels;
 using System;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class WebSocketConnection : BaseTcpSocketConnection<IWebSocketServer, IWebSocketConnection, string>, IWebSocketConnection
     {

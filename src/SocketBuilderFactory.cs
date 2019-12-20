@@ -1,4 +1,4 @@
-﻿namespace Coldairarrow.DotNettySocket
+﻿namespace Connector.DotNettySocket
 {
     /// <summary>
     /// Socket构建者工厂

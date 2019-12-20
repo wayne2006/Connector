@@ -1,5 +1,5 @@
-﻿using Coldairarrow.DotNettySocket;
-using Coldairarrow.DotNettySocket.Protocol;
+﻿using Connector.DotNettySocket;
+using Connector.DotNettySocket.Protocol;
 using System;
 using System.Collections.Generic;
 using System.Linq;

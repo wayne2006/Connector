@@ -1,6 +1,6 @@
 ﻿using DotNetty.Buffers;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// 包含编码器和解码器的构建者

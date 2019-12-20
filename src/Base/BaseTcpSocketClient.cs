@@ -1,7 +1,7 @@
 ﻿using DotNetty.Transport.Channels;
 using System;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     abstract class BaseTcpSocketClient<TSocketClient, TData> : IBaseTcpSocketClient, IChannelEvent
         where TSocketClient : class, IBaseTcpSocketClient

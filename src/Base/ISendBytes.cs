@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// 发送字节

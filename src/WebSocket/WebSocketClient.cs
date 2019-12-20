@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class WebSocketClient : BaseTcpSocketClient<IWebSocketClient, string>, IWebSocketClient
     {

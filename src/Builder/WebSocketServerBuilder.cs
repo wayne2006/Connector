@@ -4,7 +4,7 @@ using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class WebSocketServerBuilder :
         BaseGenericServerBuilder<IWebSocketServerBuilder, IWebSocketServer, IWebSocketConnection, string>,

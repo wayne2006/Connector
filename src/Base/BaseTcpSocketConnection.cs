@@ -2,7 +2,7 @@
 using System;
 using System.Net;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     abstract class BaseTcpSocketConnection<TTcpSocketServer, TConnection, TData>
         : IBaseSocketConnection

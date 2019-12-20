@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 
-namespace Coldairarrow.DotNettySocket.Protocol
+namespace Connector.DotNettySocket.Protocol
 {
     /// <summary>
     /// String type request information

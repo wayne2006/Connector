@@ -1,11 +1,11 @@
 ﻿using System.Net;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     /// <summary>
     /// SocketConnection基接口
     /// </summary>
-    /// <seealso cref="Coldairarrow.DotNettySocket.IClose" />
+    /// <seealso cref="Connector.DotNettySocket.IClose" />
     public interface IBaseSocketConnection : IClose
     {
         /// <summary>

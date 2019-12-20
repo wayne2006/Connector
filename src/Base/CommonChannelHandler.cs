@@ -1,7 +1,7 @@
 ﻿using DotNetty.Transport.Channels;
 using System;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class CommonChannelHandler : SimpleChannelInboundHandler<object>
     {

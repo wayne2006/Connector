@@ -5,7 +5,7 @@ using System;
 using System.Net;
 using System.Threading.Tasks;
 
-namespace Coldairarrow.DotNettySocket
+namespace Connector.DotNettySocket
 {
     class UdpSocketBuilder : IUdpSocketBuilder
     {
