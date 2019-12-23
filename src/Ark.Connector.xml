@@ -4,13 +4,13 @@
         <name>Ark.Connector</name>
     </assembly>
     <members>
-        <member name="T:Coldairarrow.DotNettySocket.IBaseSocketConnection">
+        <member name="T:Connector.DotNettySocket.IBaseSocketConnection">
             <summary>
             SocketConnection基接口
             </summary>
-            <seealso cref="T:Coldairarrow.DotNettySocket.IClose" />
+            <seealso cref="T:Connector.DotNettySocket.IClose" />
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseSocketConnection.ConnectionId">
+        <member name="P:Connector.DotNettySocket.IBaseSocketConnection.ConnectionId">
             <summary>
             连接Id,不可更改
             </summary>
@@ -18,7 +18,7 @@
             The connection identifier.
             </value>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseSocketConnection.ConnectionName">
+        <member name="P:Connector.DotNettySocket.IBaseSocketConnection.ConnectionName">
             <summary>
             连接名,可更改
             </summary>
@@ -26,7 +26,7 @@
             The name of the connection.
             </value>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseSocketConnection.ClientAddress">
+        <member name="P:Connector.DotNettySocket.IBaseSocketConnection.ClientAddress">
             <summary>
             客户端地址
             </summary>
@@ -34,13 +34,13 @@
             The client address.
             </value>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IBaseTcpSocketClient">
+        <member name="T:Connector.DotNettySocket.IBaseTcpSocketClient">
             <summary>
             TcpSocket客户端
             </summary>
-            <seealso cref="T:Coldairarrow.DotNettySocket.IClose" />
+            <seealso cref="T:Connector.DotNettySocket.IClose" />
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseTcpSocketClient.Ip">
+        <member name="P:Connector.DotNettySocket.IBaseTcpSocketClient.Ip">
             <summary>
             服务器Ip
             </summary>
@@ -48,7 +48,7 @@
             The ip.
             </value>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseTcpSocketClient.Port">
+        <member name="P:Connector.DotNettySocket.IBaseTcpSocketClient.Port">
             <summary>
             服务器端口
             </summary>
@@ -56,14 +56,14 @@
             The port.
             </value>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1">
+        <member name="T:Connector.DotNettySocket.IBaseTcpSocketServer`1">
             <summary>
             TcpSocketServer基接口
             </summary>
             <typeparam name="SocketConnection">The type of the ocket connection.</typeparam>
-            <seealso cref="T:Coldairarrow.DotNettySocket.IClose" />
+            <seealso cref="T:Connector.DotNettySocket.IClose" />
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.Port">
+        <member name="P:Connector.DotNettySocket.IBaseTcpSocketServer`1.Port">
             <summary>
             监听端口
             </summary>
@@ -71,7 +71,7 @@
             The port.
             </value>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.SetConnectionName(`0,System.String,System.String)">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.SetConnectionName(`0,System.String,System.String)">
             <summary>
             设置连接名
             </summary>
@@ -79,105 +79,105 @@
             <param name="oldConnectionName">原连接名</param>
             <param name="newConnectionName">新连接名</param>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionById(System.String)">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionById(System.String)">
             <summary>
             通过连接Id获取连接
             </summary>
             <param name="connectionId">连接Id</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionByName(System.String)">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionByName(System.String)">
             <summary>
             通过连接名获取连接Id
             </summary>
             <param name="connectionName">连接名</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.RemoveConnection(`0)">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.RemoveConnection(`0)">
             <summary>
             删除连接
             </summary>
             <param name="theConnection">连接</param>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.GetAllConnectionNames">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.GetAllConnectionNames">
             <summary>
             获取所有连接名
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.GetAllConnections">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.GetAllConnections">
             <summary>
             获取所有连接
             </summary>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionCount">
+        <member name="M:Connector.DotNettySocket.IBaseTcpSocketServer`1.GetConnectionCount">
             <summary>
             获取当前连接数量
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IClose">
+        <member name="T:Connector.DotNettySocket.IClose">
             <summary>
             关闭接口
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IClose.Close">
+        <member name="M:Connector.DotNettySocket.IClose.Close">
             <summary>
             关闭
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ISendBytes">
+        <member name="T:Connector.DotNettySocket.ISendBytes">
             <summary>
             发送字节
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.ISendBytes.Send(System.Byte[])">
+        <member name="M:Connector.DotNettySocket.ISendBytes.Send(System.Byte[])">
             <summary>
             发送字节
             </summary>
             <param name="bytes">字节数组</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ISendString">
+        <member name="T:Connector.DotNettySocket.ISendString">
             <summary>
             发送字符串
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.ISendString.Send(System.String)">
+        <member name="M:Connector.DotNettySocket.ISendString.Send(System.String)">
             <summary>
             发送字符串
             </summary>
             <param name="msgStr">字符串</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IBuilder`2">
+        <member name="T:Connector.DotNettySocket.IBuilder`2">
             <summary>
             构建者
             </summary>
             <typeparam name="TBuilder">特定构建者</typeparam>
             <typeparam name="TTarget">目标生成类</typeparam>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBuilder`2.OnException(System.Action{System.Exception})">
+        <member name="M:Connector.DotNettySocket.IBuilder`2.OnException(System.Action{System.Exception})">
             <summary>
             异常处理
             </summary>
             <param name="action">异常处理委托</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IBuilder`2.BuildAsync">
+        <member name="M:Connector.DotNettySocket.IBuilder`2.BuildAsync">
             <summary>
             构建目标生成类
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ICoderBuilder`1">
+        <member name="T:Connector.DotNettySocket.ICoderBuilder`1">
             <summary>
             包含编码器和解码器的构建者
             </summary>
             <typeparam name="TBuilder">特定构建着</typeparam>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.ICoderBuilder`1.SetLengthFieldDecoder(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,DotNetty.Buffers.ByteOrder)">
+        <member name="M:Connector.DotNettySocket.ICoderBuilder`1.SetLengthFieldDecoder(System.Int32,System.Int32,System.Int32,System.Int32,System.Int32,DotNetty.Buffers.ByteOrder)">
             <summary>
             设置基于长度的解码器,解决粘包与分包问题
             </summary>
@@ -189,51 +189,51 @@
             <param name="byteOrder">长度字节排序,默认为BigEndian,BigEndian:大端序,高位在前低位在后;LittleEndian:小端序,低位在前高位在后</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.ICoderBuilder`1.SetLengthFieldEncoder(System.Int32)">
+        <member name="M:Connector.DotNettySocket.ICoderBuilder`1.SetLengthFieldEncoder(System.Int32)">
             <summary>
             设置基于长度的编码器,解决粘包与分包问题
             </summary>
             <param name="lengthFieldLength">长度字段占字节数</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IGenericClientBuilder`3">
+        <member name="T:Connector.DotNettySocket.IGenericClientBuilder`3">
             <summary>
             泛型客户端构建者
             </summary>
             <typeparam name="TBuilder">特定构建者</typeparam>
             <typeparam name="TTarget">目标生成类</typeparam>
             <typeparam name="TData">数据类型</typeparam>
-            <seealso cref="T:Coldairarrow.DotNettySocket.IBuilder`2" />
+            <seealso cref="T:Connector.DotNettySocket.IBuilder`2" />
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericClientBuilder`3.OnClientStarted(System.Action{`1})">
+        <member name="M:Connector.DotNettySocket.IGenericClientBuilder`3.OnClientStarted(System.Action{`1})">
             <summary>
             客户端启动事件
             </summary>
             <param name="action">处理客户端启动事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericClientBuilder`3.OnRecieve(System.Action{`1,`2})">
+        <member name="M:Connector.DotNettySocket.IGenericClientBuilder`3.OnRecieve(System.Action{`1,`2})">
             <summary>
             接受数据事件
             </summary>
             <param name="action">处理接受数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericClientBuilder`3.OnSend(System.Action{`1,`2})">
+        <member name="M:Connector.DotNettySocket.IGenericClientBuilder`3.OnSend(System.Action{`1,`2})">
             <summary>
             发送数据事件
             </summary>
             <param name="action">处理发送数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericClientBuilder`3.OnClientClose(System.Action{`1})">
+        <member name="M:Connector.DotNettySocket.IGenericClientBuilder`3.OnClientClose(System.Action{`1})">
             <summary>
             客户端关闭事件
             </summary>
             <param name="action">处理客户端关闭事件</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IGenericServerBuilder`4">
+        <member name="T:Connector.DotNettySocket.IGenericServerBuilder`4">
             <summary>
             泛型服务端构建者
             </summary>
@@ -241,185 +241,185 @@
             <typeparam name="TTarget">目标生成类</typeparam>
             <typeparam name="IConnection">特定连接</typeparam>
             <typeparam name="TData">数据类型</typeparam>
-            <seealso cref="T:Coldairarrow.DotNettySocket.IBuilder`2" />
+            <seealso cref="T:Connector.DotNettySocket.IBuilder`2" />
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericServerBuilder`4.OnServerStarted(System.Action{`1})">
+        <member name="M:Connector.DotNettySocket.IGenericServerBuilder`4.OnServerStarted(System.Action{`1})">
             <summary>
             服务启动事件
             </summary>
             <param name="action">处理服务启动事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericServerBuilder`4.OnNewConnection(System.Action{`1,`2})">
+        <member name="M:Connector.DotNettySocket.IGenericServerBuilder`4.OnNewConnection(System.Action{`1,`2})">
             <summary>
             收到新连接事件
             </summary>
             <param name="action">处理收到新连接事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericServerBuilder`4.OnRecieve(System.Action{`1,`2,`3})">
+        <member name="M:Connector.DotNettySocket.IGenericServerBuilder`4.OnRecieve(System.Action{`1,`2,`3})">
             <summary>
             连接收到数据事件
             </summary>
             <param name="action">处理连接收到数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericServerBuilder`4.OnSend(System.Action{`1,`2,`3})">
+        <member name="M:Connector.DotNettySocket.IGenericServerBuilder`4.OnSend(System.Action{`1,`2,`3})">
             <summary>
             连接发送数据事件
             </summary>
             <param name="action">处理接发送数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IGenericServerBuilder`4.OnConnectionClose(System.Action{`1,`2})">
+        <member name="M:Connector.DotNettySocket.IGenericServerBuilder`4.OnConnectionClose(System.Action{`1,`2})">
             <summary>
             连接关闭事件
             </summary>
             <param name="action">处理连接关闭事件</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ITcpSocketClientBuilder">
+        <member name="T:Connector.DotNettySocket.ITcpSocketClientBuilder">
             <summary>
             TcpSocket客户端构建者
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ITcpSocketServerBuilder">
+        <member name="T:Connector.DotNettySocket.ITcpSocketServerBuilder">
             <summary>
             TcpSocket服务端构建者
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IUdpSocketBuilder">
+        <member name="T:Connector.DotNettySocket.IUdpSocketBuilder">
             <summary>
             UdpSocket构建者
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocketBuilder.OnStarted(System.Action{Coldairarrow.DotNettySocket.IUdpSocket})">
+        <member name="M:Connector.DotNettySocket.IUdpSocketBuilder.OnStarted(System.Action{Connector.DotNettySocket.IUdpSocket})">
             <summary>
             启动事件
             </summary>
             <param name="action">处理启动事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocketBuilder.OnRecieve(System.Action{Coldairarrow.DotNettySocket.IUdpSocket,System.Net.EndPoint,System.Byte[]})">
+        <member name="M:Connector.DotNettySocket.IUdpSocketBuilder.OnRecieve(System.Action{Connector.DotNettySocket.IUdpSocket,System.Net.EndPoint,System.Byte[]})">
             <summary>
             收到数据事件
             </summary>
             <param name="action">处理收到数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocketBuilder.OnSend(System.Action{Coldairarrow.DotNettySocket.IUdpSocket,System.Net.EndPoint,System.Byte[]})">
+        <member name="M:Connector.DotNettySocket.IUdpSocketBuilder.OnSend(System.Action{Connector.DotNettySocket.IUdpSocket,System.Net.EndPoint,System.Byte[]})">
             <summary>
             发送数据事件
             </summary>
             <param name="action">处理发送数据事件</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocketBuilder.OnClose(System.Action{Coldairarrow.DotNettySocket.IUdpSocket})">
+        <member name="M:Connector.DotNettySocket.IUdpSocketBuilder.OnClose(System.Action{Connector.DotNettySocket.IUdpSocket})">
             <summary>
             关闭事件
             </summary>
             <param name="action">处理关闭事件</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IWebSocketClientBuilder">
+        <member name="T:Connector.DotNettySocket.IWebSocketClientBuilder">
             <summary>
             WebSocket客户端构建者
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IWebSocketServerBuilder">
+        <member name="T:Connector.DotNettySocket.IWebSocketServerBuilder">
             <summary>
             WebSocket服务端构建者
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.IRequestInfo">
+        <member name="T:Connector.DotNettySocket.Protocol.IRequestInfo">
             <summary>
             Request information interface
             </summary>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.IRequestInfo.Key">
+        <member name="P:Connector.DotNettySocket.Protocol.IRequestInfo.Key">
             <summary>
             Gets the key of this request.
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.IRequestInfo`1">
+        <member name="T:Connector.DotNettySocket.Protocol.IRequestInfo`1">
             <summary>
             Request information interface
             </summary>
             <typeparam name="TRequestBody">The type of the request body.</typeparam>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.IRequestInfo`1.Body">
+        <member name="P:Connector.DotNettySocket.Protocol.IRequestInfo`1.Body">
             <summary>
             Gets the body of this request.
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.IRequestInfo`2">
+        <member name="T:Connector.DotNettySocket.Protocol.IRequestInfo`2">
             <summary>
             Request information interface
             </summary>
             <typeparam name="TRequestHeader">The type of the request header.</typeparam>
             <typeparam name="TRequestBody">The type of the request body.</typeparam>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.IRequestInfo`2.Header">
+        <member name="P:Connector.DotNettySocket.Protocol.IRequestInfo`2.Header">
             <summary>
             Gets the header of the request.
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1">
+        <member name="T:Connector.DotNettySocket.Protocol.RequestInfo`1">
             <summary>
             RequestInfo basic class
             </summary>
             <typeparam name="TRequestBody">The type of the request body.</typeparam>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1.#ctor">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`1.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1"/> class.
+            Initializes a new instance of the <see cref="T:Connector.DotNettySocket.Protocol.RequestInfo`1"/> class.
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1.#ctor(System.String,`0)">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`1.#ctor(System.String,`0)">
             <summary>
-            Initializes a new instance of the <see cref="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1"/> class.
+            Initializes a new instance of the <see cref="T:Connector.DotNettySocket.Protocol.RequestInfo`1"/> class.
             </summary>
             <param name="key">The key.</param>
             <param name="body">The body.</param>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1.Initialize(System.String,`0)">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`1.Initialize(System.String,`0)">
             <summary>
             Initializes the specified key.
             </summary>
             <param name="key">The key.</param>
             <param name="body">The body.</param>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1.Key">
+        <member name="P:Connector.DotNettySocket.Protocol.RequestInfo`1.Key">
             <summary>
             Gets the key of this request.
             </summary>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.RequestInfo`1.Body">
+        <member name="P:Connector.DotNettySocket.Protocol.RequestInfo`1.Body">
             <summary>
             Gets the body.
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2">
+        <member name="T:Connector.DotNettySocket.Protocol.RequestInfo`2">
             <summary>
             RequestInfo with header
             </summary>
             <typeparam name="TRequestHeader">The type of the request header.</typeparam>
             <typeparam name="TRequestBody">The type of the request body.</typeparam>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2.#ctor">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`2.#ctor">
             <summary>
-            Initializes a new instance of the <see cref="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2"/> class.
+            Initializes a new instance of the <see cref="T:Connector.DotNettySocket.Protocol.RequestInfo`2"/> class.
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2.#ctor(System.String,`0,`1)">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`2.#ctor(System.String,`0,`1)">
             <summary>
-            Initializes a new instance of the <see cref="T:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2"/> class.
+            Initializes a new instance of the <see cref="T:Connector.DotNettySocket.Protocol.RequestInfo`2"/> class.
             </summary>
             <param name="key">The key.</param>
             <param name="header">The header.</param>
             <param name="body">The body.</param>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2.Initialize(System.String,`0,`1)">
+        <member name="M:Connector.DotNettySocket.Protocol.RequestInfo`2.Initialize(System.String,`0,`1)">
             <summary>
             Initializes the specified key.
             </summary>
@@ -427,64 +427,64 @@
             <param name="header">The header.</param>
             <param name="body">The body.</param>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.RequestInfo`2.Header">
+        <member name="P:Connector.DotNettySocket.Protocol.RequestInfo`2.Header">
             <summary>
             Gets the header.
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo">
+        <member name="T:Connector.DotNettySocket.Protocol.StringRequestInfo">
             <summary>
             String type request information
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.#ctor(System.String,System.String,System.String[])">
+        <member name="M:Connector.DotNettySocket.Protocol.StringRequestInfo.#ctor(System.String,System.String,System.String[])">
             <summary>
-            Initializes a new instance of the <see cref="T:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo"/> class.
+            Initializes a new instance of the <see cref="T:Connector.DotNettySocket.Protocol.StringRequestInfo"/> class.
             </summary>
             <param name="key">The key.</param>
             <param name="body">The body.</param>
             <param name="parameters">The parameters.</param>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.Parameters">
+        <member name="P:Connector.DotNettySocket.Protocol.StringRequestInfo.Parameters">
             <summary>
             Gets the parameters.
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.GetFirstParam">
+        <member name="M:Connector.DotNettySocket.Protocol.StringRequestInfo.GetFirstParam">
             <summary>
             Gets the first param.
             </summary>
             <returns></returns>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.Item(System.Int32)">
+        <member name="P:Connector.DotNettySocket.Protocol.StringRequestInfo.Item(System.Int32)">
             <summary>
             Gets the <see cref="T:System.String"/> at the specified index.
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.FromBytes(System.Byte[])">
+        <member name="M:Connector.DotNettySocket.Protocol.StringRequestInfo.FromBytes(System.Byte[])">
             <summary>
             
             </summary>
             <param name="bytes"></param>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.ToString">
+        <member name="M:Connector.DotNettySocket.Protocol.StringRequestInfo.ToString">
             <summary>
             
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Protocol.StringRequestInfo.ParseRequestInfo(System.String)">
+        <member name="M:Connector.DotNettySocket.Protocol.StringRequestInfo.ParseRequestInfo(System.String)">
             <summary>
             Parses the request info.
             </summary>
             <param name="source">The source.</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.SocketBuilderFactory">
+        <member name="T:Connector.DotNettySocket.SocketBuilderFactory">
             <summary>
             Socket构建者工厂
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.SocketBuilderFactory.GetTcpSocketClientBuilder(System.String,System.Int32)">
+        <member name="M:Connector.DotNettySocket.SocketBuilderFactory.GetTcpSocketClientBuilder(System.String,System.Int32)">
             <summary>
             获取TcpSocket客户端构建者
             </summary>
@@ -492,14 +492,14 @@
             <param name="port">服务器端口</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.SocketBuilderFactory.GetTcpSocketServerBuilder(System.Int32)">
+        <member name="M:Connector.DotNettySocket.SocketBuilderFactory.GetTcpSocketServerBuilder(System.Int32)">
             <summary>
             获取TcpSocket服务端构建者
             </summary>
             <param name="port">监听端口</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.SocketBuilderFactory.GetWebSocketServerBuilder(System.Int32,System.String)">
+        <member name="M:Connector.DotNettySocket.SocketBuilderFactory.GetWebSocketServerBuilder(System.Int32,System.String)">
             <summary>
             获取WebSocket服务端构建者
             </summary>
@@ -507,7 +507,7 @@
             <param name="path">路径,默认为"/"</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.SocketBuilderFactory.GetWebSocketClientBuilder(System.String,System.Int32,System.String)">
+        <member name="M:Connector.DotNettySocket.SocketBuilderFactory.GetWebSocketClientBuilder(System.String,System.Int32,System.String)">
             <summary>
             获取WebSocket客户端构建者
             </summary>
@@ -516,7 +516,7 @@
             <param name="path">路径,默认为"/"</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.SocketBuilderFactory.GetUdpSocketBuilder(System.Int32)">
+        <member name="M:Connector.DotNettySocket.SocketBuilderFactory.GetUdpSocketBuilder(System.Int32)">
             <summary>
             获取Udpocket构建者
             注:UDP服务端与客户端一样
@@ -524,33 +524,33 @@
             <param name="port">监听端口,作为客户端时可不设置</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ITcpSocketClient">
+        <member name="T:Connector.DotNettySocket.ITcpSocketClient">
             <summary>
             TcpSocket客户端
             </summary>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.ITcpSocketClient.GetStatus">
+        <member name="M:Connector.DotNettySocket.ITcpSocketClient.GetStatus">
             <summary>
             获取连接状态
             </summary>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ITcpSocketConnection">
+        <member name="T:Connector.DotNettySocket.ITcpSocketConnection">
             <summary>
             TcpSocket连接
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.ITcpSocketServer">
+        <member name="T:Connector.DotNettySocket.ITcpSocketServer">
             <summary>
             TcpSocket服务端
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IUdpSocket">
+        <member name="T:Connector.DotNettySocket.IUdpSocket">
             <summary>
             UdpSocket
             </summary>
         </member>
-        <member name="P:Coldairarrow.DotNettySocket.IUdpSocket.Port">
+        <member name="P:Connector.DotNettySocket.IUdpSocket.Port">
             <summary>
             监听端口
             </summary>
@@ -558,7 +558,7 @@
             The port.
             </value>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocket.Send(System.Byte[],System.Net.EndPoint)">
+        <member name="M:Connector.DotNettySocket.IUdpSocket.Send(System.Byte[],System.Net.EndPoint)">
             <summary>
             发送字节
             </summary>
@@ -566,7 +566,7 @@
             <param name="point">目标地址</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.IUdpSocket.Send(System.String,System.Net.EndPoint)">
+        <member name="M:Connector.DotNettySocket.IUdpSocket.Send(System.String,System.Net.EndPoint)">
             <summary>
             发送字符串,UTF-8编码
             </summary>
@@ -574,31 +574,31 @@
             <param name="point">目标地址</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Extention.ToIPEndPoint(System.String)">
+        <member name="M:Connector.DotNettySocket.Extention.ToIPEndPoint(System.String)">
             <summary>
             转为网络终结点IPEndPoint
             </summary>=
             <param name="str">字符串</param>
             <returns></returns>
         </member>
-        <member name="M:Coldairarrow.DotNettySocket.Extention.ToArray(DotNetty.Buffers.IByteBuffer)">
+        <member name="M:Connector.DotNettySocket.Extention.ToArray(DotNetty.Buffers.IByteBuffer)">
             <summary>
             获取IByteBuffer中的byte[]
             </summary>
             <param name="byteBuffer">IByteBuffer</param>
             <returns></returns>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IWebSocketClient">
+        <member name="T:Connector.DotNettySocket.IWebSocketClient">
             <summary>
             WebSocket客户端
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IWebSocketConnection">
+        <member name="T:Connector.DotNettySocket.IWebSocketConnection">
             <summary>
             WebSocket连接
             </summary>
         </member>
-        <member name="T:Coldairarrow.DotNettySocket.IWebSocketServer">
+        <member name="T:Connector.DotNettySocket.IWebSocketServer">
             <summary>
             WebSocket服务端
             </summary>

@@ -15,11 +15,13 @@ namespace MyTcpSocketClient
             client.Run();
 
             var req = new StringRequestInfo("Echo", "123", null);
+            int i = 0;
             while (true)
             {
-                await client.SendAsync(req.ToString());
-
-                await Task.Delay(100);
+                i++;
+                //await client.SendAsync(req.ToString());
+                Console.WriteLine(i.ToString());
+                await Task.Delay(1000);
             }
 
             Console.ReadLine();

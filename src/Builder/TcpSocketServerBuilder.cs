@@ -1,5 +1,7 @@
-﻿using DotNetty.Buffers;
+﻿using Ark.Connector.Base;
+using DotNetty.Buffers;
 using DotNetty.Codecs;
+using DotNetty.Handlers.Timeout;
 using DotNetty.Transport.Bootstrapping;
 using DotNetty.Transport.Channels;
 using DotNetty.Transport.Channels.Sockets;
@@ -46,7 +48,8 @@ namespace Connector.DotNettySocket
                 {
                     IChannelPipeline pipeline = channel.Pipeline;
                     _setEncoder?.Invoke(pipeline);
-                    pipeline.AddLast(new CommonChannelHandler(tcpServer));
+                    pipeline.AddLast("timeout", new IdleStateHandler(40, 0, 0));//40秒检测读事件
+                    pipeline.AddLast(new TcpServerChannelHandler(tcpServer));
                 })).BindAsync(_port);
             _event.OnServerStarted?.Invoke(tcpServer);
             tcpServer.SetChannel(serverChannel);

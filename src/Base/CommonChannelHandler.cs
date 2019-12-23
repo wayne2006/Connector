@@ -1,15 +1,20 @@
-﻿using DotNetty.Transport.Channels;
+﻿using DotNetty.Common.Internal.Logging;
+using DotNetty.Handlers.Timeout;
+using DotNetty.Transport.Channels;
+using Microsoft.Extensions.Logging;
 using System;
 
 namespace Connector.DotNettySocket
 {
     class CommonChannelHandler : SimpleChannelInboundHandler<object>
     {
+        protected ILogger logger;
+        IChannelEvent _channelEvent { get; }
         public CommonChannelHandler(IChannelEvent channelEvent)
         {
             _channelEvent = channelEvent;
+            logger = InternalLoggerFactory.DefaultFactory.CreateLogger("Netty");
         }
-        IChannelEvent _channelEvent { get; }
 
         protected override void ChannelRead0(IChannelHandlerContext ctx, object msg)
         {
